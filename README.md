@@ -25,6 +25,15 @@ Multimodal Learning · 3D Vision · Driver Behavior Understanding under Domain S
 
 ---
 
+#### 🧪 Selected Projects
+
+- **PDF Paper Translator (Layout-preserving EN→KR Translation)** — 2025
+  YOLOv11 fine-tuned on DocLayNet for figure/table/equation/caption detection,
+  PyMuPDF text extraction with custom point↔pixel coordinate transformation,
+  and Helsinki-NLP en-ko model for translation while preserving original PDF layout.
+
+---
+
 #### 🛠 Tech
 
 `Python` · `PyTorch` · `OpenCV` · `Git` · `Linux`
