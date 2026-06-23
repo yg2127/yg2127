@@ -19,7 +19,7 @@ Multimodal Learning · 3D Vision · Driver Behavior Understanding under Domain S
 - **Heart Lab, Sejong University — Undergraduate Research Intern** (2025.06 – 2025.10)
   ST-GCN-based driver abnormal behavior classification on the _100 Driver Dataset_.
 
-- **Lab Seminar Presentations** — paper reviews & presentations during the internship:
+- **Paper Review Slides** — Heart Lab seminar talks & independent paper reviews:
   GCN · CLIP · BYOL · ResNet · SVM · TabPFN
   → see [`paper-review-slides`](https://github.com/yg2127/paper-review-slides) for slides
 
