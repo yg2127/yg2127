@@ -20,20 +20,22 @@ Computer Vision · Multimodal Learning · Vision-Language Models · Model Robust
 
 #### 🧪 Selected Projects
 
-- **Capstone Design — Occlusion-Robust Driver Monitoring** (2026.03 – 2026.06) · 🏆 **Excellence Award**, Sejong University Creative Design Competition (2026)
-  → [`full_model`](https://github.com/yg2127/full_model)
-  Multitask DMS classifier (action · gaze · hands · talk) made robust to occlusion
-  (sunglasses · masks · patches). Core idea: an **occlusion-gated face input (occgateRAW)** that
-  restores occluded facial landmarks via **ORFormer + StackedHGNet** and aligns them back to the
-  mediapipe facemesh coordinate frame (Umeyama), with per-region occlusion judged by an occlusion CNN.
-  Reduces gaze performance degradation to **PDI 9.0%** (vs. 16–27% for landmark/image baselines) under occlusion.
+- **Capstone Design — OcclusionGateNet: Occlusion- & NIR-Robust Driver Monitoring** (2026.03 – 2026.06) · 🏆 **Excellence Award**, Sejong University Creative Design Competition (2026) · **team lead**
+  → [`OcclusionGateNet`](https://github.com/yg2127/OcclusionGateNet)
+  Multitask DMS classifier (action · gaze · hands · talk) robust to occlusion (sunglasses · masks · hands)
+  and night-time low-light, running on dual near-infrared (IR) cameras. Three pillars: **NIR domain adaptation**
+  (YOLO-Pose fine-tuned on hand-labeled IR frames, mAP50-95 0.788), **occluded-landmark restoration**
+  via **ORFormer + VQ-VAE + HGNet** (NME ≤ 5%), and **Occlusion-aware Dynamic Fusion** gating face/pose
+  cues by per-region visibility from an occ CNN (Macro-F1 0.9714).
+  Reaches **masked gaze F1 0.583** (+10.8–46.3% over external SOTA baselines) and cuts the degradation
+  index **PDI 6.93% → 3.67%**. Demoed live on a night-time public road with two IR cameras (TTS risk warnings).
   Builds on the ST-GCN backbone from my Heart Lab internship.
 
 - **PDF Paper Translator (Layout-preserving EN→KR Translation)** — 2025
   → [`pdf-paper-translator`](https://github.com/yg2127/pdf-paper-translator)
-  YOLOv11 fine-tuned on DocLayNet for figure/table/equation/caption detection,
-  PyMuPDF text extraction with custom point↔pixel coordinate transformation,
-  and Helsinki-NLP en-ko model for translation while preserving original PDF layout.
+  YOLOv11 (DocLayNet) for figure/table/equation detection, PyMuPDF text extraction
+  with custom point↔pixel coordinate transforms, and a QLoRA-fine-tuned
+  TowerInstruct-13B (MarianMT fallback) for translation — preserving the original PDF layout.
 
 ---
 
