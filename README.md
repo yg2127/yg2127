@@ -9,6 +9,8 @@ Computer Vision · Multimodal Learning · Vision-Language Models · Model Robust
 
 #### 📚 Recent Research Activity
 
+- **[Smart Vision & Media Lab (SVM Lab)](https://sites.google.com/view/csi2267svm/), Sogang University — Undergraduate Research Intern (2026.09 – Present)**
+
 - **Heart Lab, Sejong University — Undergraduate Research Intern** (2025.06 – 2025.10)
   ST-GCN-based driver behavior classification on the _100 Driver Dataset_ (action macro-F1 0.76).
 
@@ -47,5 +49,5 @@ Computer Vision · Multimodal Learning · Vision-Language Models · Model Robust
 
 #### 🔗 Links
 
-- 📝 Tech Blog — [yg2127.github.io](https://yg2127.github.io)
+- 📝 GitBlog — [yg2127.github.io](https://yg2127.github.io)
 - 📧 Email — gyu32386@gmail.com
